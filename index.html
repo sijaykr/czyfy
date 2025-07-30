@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Player</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utility1.css" />
+</head>
+<body>
+  <div class="container flex bg-black">
+    <div class="left">
+      <div class="close">
+        <img width="30" src="img/close.svg" alt="Close" />
+      </div>
+      <div class="home rounded m-1 bg-grey p-1">
+        <div class="logo m-1">
+          <img class="invert" width="150" src="img/logo.svg" alt="Logo" />
+        </div>
+        <ul>
+          <li><img class="invert" src="img/home.svg" alt="Home" />Home</li>
+          <li><img class="invert" src="img/search.svg" alt="Search" />Search</li>
+        </ul>
+      </div>
+      <div class="library bg-grey m-1 p-1">
+        <div class="heading">
+          <img class="invert" src="img/playlist.svg" alt="Library" />
+          <h2>Your Library</h2>
+        </div>
+        <div class="songlist">
+          <ul></ul>
+        </div>
+        <div class="footer">
+          <div><a href="#"><span>Legal</span></a></div>
+          <div><a href="#"><span>Privacy Center</span></a></div>
+          <div><a href="#"><span>Privacy Policy</span></a></div>
+          <div><a href="#"><span>Cookies</span></a></div>
+          <div><a href="#"><span>About Ads</span></a></div>
+          <div><a href="#"><span>Accessibility</span></a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right rounded bg-grey">
+      <div class="header">
+        <div class="nav">
+          <div class="hamburgercontainer">
+            <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="Menu" />
+          </div>
+        </div>
+        <div class="button">
+          <button class="signup">Sign up</button>
+          <button class="login">Log in</button>
+        </div>
+      </div>
+
+      <div class="spotifyplaylist">
+        <h1>Spotify Playlist</h1>
+        <div class="cartcontainer">
+          <!-- Cards will be injected by JS -->
+        </div>
+
+        <div class="playbar">
+          <div class="seekbar"><div class="circle"></div></div>
+          <div class="abovebar">
+            <div class="songinfo"></div>
+            <div class="songbuttons">
+              <img width="35" id="previous" src="img/prevsong.svg" alt="Previous" />
+              <img width="35" id="play" src="img/playmusic.svg" alt="Play" />
+              <img width="35" id="next" src="img/nextsong.svg" alt="Next" />
+            </div>
+            <div class="timevol">
+              <div class="songtime">00:00 / 00:00</div>
+              <div class="volume">
+                <img width="34" src="img/volume.svg" alt="Volume Icon" />
+                <div class="range">
+                  <input type="range" name="volume" min="0" max="100" value="100" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- playbar -->
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
